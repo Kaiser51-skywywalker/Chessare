@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шахматы и язык ИИ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="bar">
+<nav><a href="#open" data-i="n6"></a><a href="#trad" data-i="n1"></a><a href="#talk" data-i="n2"></a><a href="#ana" data-i="n3"></a><a href="#shift" data-i="n4"></a><a href="#gl" data-i="n5"></a><a href="#slang" data-i="n7"></a><a href="#about" data-i="ab"></a></nav>
+<select id="th" aria-label="Theme"></select><div class="lg" id="lg"><button data-l="ru">RU</button><button data-l="en">EN</button><button data-l="kk">ҚАЗ</button></div>
+</div></header>
+<main>
+<div class="hero"><div class="hb"><svg class="logo" viewBox="0 0 200 200" role="img" aria-label="chessare"><defs><path id="ra" d="M25 100A75 75 0 0 1 175 100"/></defs><circle cx="100" cy="100" r="98" fill="#14202b"/><circle cx="100" cy="100" r="93" fill="#2f6f73"/><circle cx="100" cy="100" r="93" fill="none" stroke="#e0a43c" stroke-width="1.5"/><circle cx="100" cy="100" r="68" fill="#eef3f5" stroke="#14202b" stroke-width="3"/><circle cx="100" cy="100" r="72" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 5"/><text font-family="'PT Serif',Georgia,serif" font-size="19" font-weight="700" fill="#fff" letter-spacing="4" text-anchor="middle"><textPath href="#ra" startOffset="50%">CHESSARE</textPath></text><g fill="#e0a43c"><circle cx="182" cy="100" r="3"/><circle cx="18" cy="100" r="3"/><circle cx="171" cy="141" r="3"/><circle cx="141" cy="171" r="3"/><circle cx="100" cy="182" r="3"/><circle cx="59" cy="171" r="3"/><circle cx="29" cy="141" r="3"/></g><g transform="translate(57.5 42.2) scale(.85)" fill="#14202b"><path d="M48 5L59 17C68 22 75 36 75 58C75 72 73 84 72 94H27C26 84 27 76 34 68C40 61 46 58 48.5 51C44 52 36 55 29.5 53L23 52C20 51 17 49 17.5 46C17.5 40 20 37 25 34L37.5 22Z"/><path d="M61 13C74 17 83 30 84 48C85 66 81 80 82 90L77 94C78 84 80 72 80 56C79 40 72 26 61 17Z"/><path d="M43 49C48 48 52 45 56 41" fill="none" stroke="#eef3f5" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="40" cy="26.5" rx="3" ry="1.5" transform="rotate(-20 40 26.5)" fill="#eef3f5"/><rect x="24" y="96" width="52" height="6" rx="3"/><path d="M24 103H76C78 110 84 112 86 116Q86 120 82 120H18Q14 120 14 116C16 112 22 110 24 103Z"/><rect x="12" y="122" width="76" height="9" rx="3"/></g></svg><h1 data-i="t"></h1></div><p data-i="s"></p><div class="strip" aria-hidden="true"></div></div>
+
+<section id="open"><h2 data-i="n6"></h2><p class="d" data-i="d6"></p><input type="search" id="oq"><div class="ch" id="oc"></div><p class="cnt"><span data-i="lc"></span> <b id="lc2">0</b>/50</p><div class="gr" id="og"></div></section>
+
+<section id="trad"><h2 data-i="n1"></h2><p class="d" data-i="d1"></p>
+<div class="tw"><table><thead><tr><th data-i="old"></th><th data-i="now"></th></tr></thead><tbody id="tb"></tbody></table></div></section>
+
+<section id="talk"><h2 data-i="n2"></h2><p class="d" data-i="d2"></p><div id="ph"></div></section>
+
+<section id="ana"><h2 data-i="n3"></h2><p class="d" data-i="d3"></p>
+<div class="cols"><div><b data-i="hum"></b><span id="a0"></span></div><div><b data-i="eng"></b><span id="a1"></span></div></div></section>
+
+<section id="shift"><h2 data-i="n4"></h2><div id="cu"></div></section>
+
+<section id="gl"><h2 data-i="n5"></h2><p class="d" data-i="d5"></p>
+<div class="gr" id="pc"></div><input type="search" id="q" style="margin-top:14px"><div class="gr" id="gd"></div>
+<h2 style="margin-top:28px;font-size:21px" data-i="s1"></h2>
+<p class="d" data-i="s2" style="margin-bottom:8px"></p>
+<input type="text" id="an"><button class="btn" id="ex" data-i="ex"></button><textarea id="out" readonly hidden></textarea></section>
+
+<section id="slang"><h2 data-i="n7"></h2><p class="d" data-i="d7"></p><div class="tw"><table><thead><tr><th data-i="sx"></th><th data-i="sm"></th></tr></thead><tbody id="sb"></tbody></table></div></section>
+
+<section id="about"><h2 data-i="ab"></h2><p data-i="abt" style="max-width:60ch"></p><div id="ab2" style="margin-top:12px"></div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
